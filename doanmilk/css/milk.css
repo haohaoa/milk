@@ -1,0 +1,339 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0066cc;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    transition: all 0.3s;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.danh-sach-san-pham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 7px;
+}
+
+.san-pham {
+    width: 120px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.san-pham:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.san-pham h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.san-pham p {
+    margin: 5px 0;
+}
+
+.san-pham p:first-of-type {
+    font-weight: bold;
+}
+
+/* ảnh sản phẩm  */
+.san-pham {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.san-pham a {
+    list-style-type: none;
+}
+
+.hinh-anh-san-pham {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* canh lề sản phẩm  */
+.than {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.than a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.san-pham {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: #ffffff; /* Đổi màu nền thành trắng */
+}
+
+.san-pham:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.san-pham h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.san-pham p {
+    margin: 5px 0;
+}
+
+.san-pham p:first-of-type {
+    font-weight: bold;
+}
+
+.hinh-anh-san-pham {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.icon{
+    display: none;
+}
+.tat{
+    display: none;
+}
+@media (max-width:1174px){
+    .tat.hien{
+        height: 100%;
+        position: absolute;
+        width: 70%;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .navbar.hien{
+        transform: translateX(0%);
+
+    }
+    .navbar {
+        transform: translateX(100%);
+        width: 100%;
+        height: 100%;
+       
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        transition: all ease-in-out 0.4s;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-color: rgba(31, 31, 31,0.8);
+        width: 30%;
+        height: 100%;
+        
+       
+    }
+    nav ul li a{
+        color: #ffffff;
+        
+    }
+    nav ul li{
+       padding: 20px;
+        
+    }
+    .nhanbiet{
+        display: none;
+    }
+    .icon{
+        font-size: 30px;
+        display: block;
+        margin-left: 20px;
+    }
+    .icon .hien{
+        font-size: 30px;
+        display: block;
+        margin-left: 20px;
+    }
+    nav ul.hien{
+        transform: translateX(0);
+    }
+}
+.icon_tim{
+    display: none;
+}
+@media (max-width:700px) {
+    .timkiem{
+        position: absolute;
+        left: 6px;
+        background-color:#f2f2f2;
+    
+        display: none ;
+    }
+    
+    .search-container input[type="text"]{
+        width: 52%;
+    }
+    .timkiem.hien{
+      display: block;
+    }
+    .icon_tim{
+        display: block;
+    }
+    
+}
+
+@media (max-width:513px) {
+   div.poster{
+    height: 250px;
+   }
+    
+}
+@media (max-width:650px) {
+   .sanpham{
+    display: block;
+
+   }
+   .mota{
+    font-size: 13px;
+   }
+   .tieude{
+    font-size: 20px;
+   }
+   .gia {
+    font-size: 15px; 
+    }
+    .btn{
+        margin: 10px 0;
+    }
+    .sanphamlienquan h2{
+       font-size: 15px;
+    }
+ }
+ @media (max-width:481px) {
+    .san-pham{
+        width: 139px;
+        padding: 1px;
+        margin: -12px;
+    }
+    .san-pham h2 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .san-pham p {
+        margin: 5px 0;
+        font-size: 10px;
+    }
+    .giohang th {
+      
+        font-size: 9px;
+    }
+    .giohang td {
+        
+        font-size: 7px;
+    }
+    .delete-btn {
+        color: #f00f0f;
+        background-color:initial;
+    }
+    img.imgqt {
+        width: 35px;
+    }
+    th{
+        font-size: 5px;
+    }
+    .quanly li a {
+        font-size: 8px;
+    }
+    td, th {
+        font-size: 7px;
+    }
+    .container {
+       
+        padding: 0px;
+    }
+    .bang_hoa_don th, .bang_hoa_don td {
+        padding: 6px
+    }
+}
